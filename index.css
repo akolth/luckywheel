@@ -1,0 +1,356 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  /*background-color: black;*/
+  color: white;
+  animation: fadeIn 1s;
+  background-image: url(john-schnobrich-VnHzobjGra4-unsplash.jpg);
+  background-size: cover;
+  animation: gradientAnimation 10s infinite;
+  background-size: 150% 150%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 110px;
+  color: white;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px; /* Adjust spacing between buttons */
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.header-nav a:hover {
+  color: #ffff81; /* Change color on hover */
+}
+
+/* Style for the active link (current page) */
+.header-nav a.active {
+  font-weight: bold;
+  color: #ffff81; /* Active link color */
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 400px;
+  margin-right: 100px;
+  padding-right: 100px;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 15px 30px;
+  background-color: #ffff81;
+  color: #d18220;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Content section styles */
+.content {
+  padding: 50px;
+  text-align: left;
+  animation: slideInLeft 1s;
+  margin-bottom: 230px;
+  align-items: right;
+  margin-left: 600px;
+}
+
+.casino-image {
+  height: 100px;
+  width: 100px;
+  align-items: left;
+  justify-content: left;
+  margin-top: 80px;
+}
+
+.main-text {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.try-button {
+  background-color: cobaltblue;
+  padding: 15px 30px;
+  background-color: rgba(230, 205, 151, 0.7);
+  width: 200px;
+  color: #d18220;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.try-button:hover {
+  background-color: #ffff81;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(230, 205, 151, 0.5);
+  color: white;
+  border: solid 1px;
+  border-color: #ffff81;
+  border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-buttons a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .try-button {
+    width: 120px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+/*about section */
+
+#About {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Abouth1 {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #ffff81;
+}
+
+.Aboutp {
+  background-color: rgba(230, 205, 151, 0.5);
+  padding: 18px;
+  height: 200px;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(230, 205, 151, 0.5);
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding-left: 50px;
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+/* roadmap sectio*/
+
+#Roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#name {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 120px;
+  text-transform: uppercase;
+  color: #ffff81;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(230, 205, 151, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  align-items: left;
+  justify-content: center;
+}
+
+.box {
+  flex: 0 0 calc(30% - 20px); /* Adjust the width as needed */
+  background: transparent;
+  padding: 50px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: #ffff81;
+}
+
+hr {
+  border: 1px rgba(230, 205, 151, 0.5);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* How to play*/
+
+#Gameplay {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.htp-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px;
+  gap: 10px; /* Adjust spacing between boxes */
+}
+
+.htp-box {
+  flex: 0 0 calc(30% - 10px); /* Adjust the width as needed */
+  background: transparent;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(230, 205, 151, 0.5);
+  text-align: left;
+  border-radius: 10px;
+  background-color: rgba(230, 205, 151, 0.5);
+  box-shadow: 0 0 10px rgba(230, 205, 151, 0.5);
+}
+
+.htptext {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.htptext-bold {
+  color: #ffff81;
+}
+
+.htptext.medium {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* tokenomics */
+#tokenomics {
+  margin-bottom: 100px;
+}
+.tokenomics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.transparent-box {
+  flex: 1;
+  background-color: rgba(230, 205, 151, 0.5);
+  border: 1px rgba(230, 205, 151, 0.5);
+  box-shadow: 0 0 10px rgba(230, 205, 151, 0.5);
+  border-radius: 10px;
+  height: 200px;
+  width: 20%;
+  padding: 20px;
+}
+
+.image-box {
+  flex: 1; /* Distribute equal space to both boxes */
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+}
